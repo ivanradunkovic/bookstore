@@ -13,7 +13,7 @@ class Cart extends React.Component {
         // Determine at which index in books array is the book to be deleted
         const indexToDelete = currentBookToDelete.findIndex(
           function(cart){
-            return cart._id === _id;
+            return cart._id == _id;
           }
         )
         //use slice to remove the book at the specified index

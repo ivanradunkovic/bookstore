@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-no-comment-textnodes */
 import React from 'react';
 import {Well, Panel, FormControl, FormGroup, ControlLabel, Button} from 'react-bootstrap';
 import {connect} from 'react-redux';

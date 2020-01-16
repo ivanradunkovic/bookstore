@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('bookstore-app:server');
+var debug = require('debug')('react-bookstore-app:server');
 var http = require('http');
 
 /**

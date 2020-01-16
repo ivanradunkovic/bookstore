@@ -1,14 +1,8 @@
+// REACT
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import BooksList from './components/pages/booksList';
-import Cart from './components/pages/cart';
-import BooksForm from './components/pages/booksFrom';
-import Main from './main';
-
 import {render} from 'react-dom';
 import {Provider} from 'react-redux';
-
+// REACT-ROUTER
 import {Router, Route, IndexRoute, browserHistory, hashHistory} from 'react-router';
 
 import { applyMiddleware, createStore } from 'redux';
@@ -24,7 +18,10 @@ import {postBooks, deleteBooks, updateBooks} from './actions/booksActions'
 const middleware = applyMiddleware(logger);
 const store = createStore(reducers, middleware);
 
-
+import BooksList from './components/pages/booksList';
+import Cart from './components/pages/cart';
+import BooksForm from './components/pages/booksFrom';
+import Main from './main';
 
 const Routes = (
     <Provider store={store}>

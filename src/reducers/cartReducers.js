@@ -1,4 +1,3 @@
-/* eslint-disable default-case */
 // CART REDUCERS
 export function cartReducers(state = {cart:[]}, action) {
     switch(action.type) {
@@ -8,6 +7,8 @@ export function cartReducers(state = {cart:[]}, action) {
           totalAmount: totals(action.payload).amount,
           totalQty: totals(action.payload).qty
         };
+        break;
+
 
         case 'UPDATE_CART':
         // Create a copy of the current array of books
@@ -31,6 +32,7 @@ export function cartReducers(state = {cart:[]}, action) {
             totalAmount: totals(cartUpdate).amount,
             totalQty: totals(cartUpdate).qty
         }
+        break;
 
 
         case 'DELETE_CART_ITEM':
@@ -39,6 +41,7 @@ export function cartReducers(state = {cart:[]}, action) {
           totalAmount: totals(action.payload).amount,
           totalQty: totals(action.payload).qty
         };
+        break;
     }
     return state;
 }

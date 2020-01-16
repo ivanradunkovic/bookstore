@@ -1,12 +1,11 @@
-/* eslint-disable default-case */
 // BOOKS REDUCERS
 export function booksReducers(state={
     books: 
         [{
             _id: 1,
-            title: 'This is a book title',
-            description: 'This is the book description',
-            price: 499.99
+            title: 'The Lord of the Rings: The Fellowship of the Ring',
+            description: 'A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.',
+            price: 20.01
         }, 
         {
             _id: 2,
@@ -16,7 +15,7 @@ export function booksReducers(state={
         }]
 }, action) {
     switch(action.type) {
-        case "GETT_BOOK": 
+        case "GET_BOOK": 
         return {...state, books:[...state.books]};
 
         case "POST_BOOK": 
