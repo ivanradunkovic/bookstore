@@ -9,9 +9,9 @@ export function booksReducers(state={
         }, 
         {
             _id: 2,
-            title: 'This is a second book title',
-            description: 'This is the second book description',
-            price: 325.25
+            title: 'The Lord of the Rings: The Two Towers',
+            description: 'While Frodo and Sam edge closer to Mordor with the help of the shifty Gollum, the divided fellowship makes a stand against Saurons new ally, Saruman, and his hordes of Isengard.',
+            price: 20.02
         }]
 }, action) {
     switch(action.type) {
